@@ -9,8 +9,8 @@ b=int(input('Долгота:'))
 print('Ждите...')
 temp = []
 
-for i in range(a-4,a+4,2):
-    for j in range(b-4,b+4,2):
+for i in range(a-4,a+6,2):
+    for j in range(b-4,b+6,2):
         obs = owm.weather_at_coords(i, j)
         w = obs.get_weather()
         t = w.get_temperature('celsius')
